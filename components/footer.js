@@ -10,7 +10,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="font-bold"
           >
-            Taylor Bryant
+            京備字第 0000000000 號
           </a>
         </li>
 
