@@ -1,11 +1,6 @@
-import Link from "next/link";
-import {useState} from "react";
-import cn from "classnames";
 import Image from "next/image";
 
 export default function Header() {
-    const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
-
     return (
         <header className="">
             <div className={"bg-cyan-600 text-right text-white text-2xl py-4 pr-2"}>
