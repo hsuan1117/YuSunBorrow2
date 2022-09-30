@@ -4,8 +4,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Testimonial from "@components/Testimonial";
 export default function IndexPage() {
     return (
-        <div className="flex flex-col bg-white">
-            <div className={"flex flex-col px-8 py-2 border-x border-cyan-500  mt-6"}>
+        <div className="flex flex-col bg-white border-x border-cyan-500  pb-32">
+            <div className={"flex flex-col px-8 py-2  mt-6"}>
                 <h2 className={"text-2xl"}>為何大家貸款都找玉山貸款？</h2>
                 <h5 className={"text-lg"}>5萬到5億，專屬對應的服務團隊</h5>
 
@@ -127,7 +127,7 @@ export default function IndexPage() {
                 </div>
             </div>
 
-            <div className={"flex flex-col px-8 pt-2 pb-32 border-x border-cyan-500 mt-16"}>
+            <div className={"flex flex-col px-8 pt-2 mt-16"}>
                 <h2 className={"text-2xl"}>為何大家都找玉山貸款融資?</h2>
                 <h5 className={"text-lg"}>我們的客戶親身見證:沒有過不了的關,只有你沒找玉山。</h5>
 
@@ -170,6 +170,120 @@ export default function IndexPage() {
                             證自己有在工作,就算有金流證明,可能也不覺得你以後能
                             持續維持,所以SOHO是金融機構的次等公⺠,玉山林經理
                             有同理心,只有她很快幫我解決。」`}/>
+                </div>
+            </div>
+
+            <div className={"flex flex-col px-8 py-2 mt-16"}>
+                <h2 className={"text-2xl"}>留、申、撥,快速簡單拿到資金!</h2>
+                <div className={"border-t-2 border-cyan-500 pt-12 flex flex-col gap-3 mt-4"}>
+                    <div className={"flex flex-col md:flex-row gap-1"}>
+                        <div className={"text-white text-2xl bg-cyan-500 rounded-full w-12 h-12 inline-flex items-center justify-center"}>留</div>
+                        <div className={"inline-flex items-center px-2 border-2 border-cyan-500 rounded-xl w-full"}>留言或來電0800-000-000,諮詢或像朋友一樣聊聊天,花您不到三分鐘,免費解決您三天也想不出結果的資金問題!</div>
+                    </div>
+                    <div className={"flex flex-col md:flex-row gap-1"}>
+                        <div className={"text-white text-2xl bg-cyan-500 rounded-full w-12 h-12 inline-flex items-center justify-center"}>申</div>
+                        <div className={"inline-flex items-center px-2 border-2 border-cyan-500 rounded-xl w-full"}>申請貸款前,我們透過累積20年的數據資料庫,比對申請條件,AI程式+專業審查人員幫您找出超高核准率的方案。</div>
+                    </div>
+                    <div className={"flex flex-col md:flex-row gap-1"}>
+                        <div className={"text-white text-2xl bg-cyan-500 rounded-full w-12 h-12 inline-flex items-center justify-center"}>撥</div>
+                        <div className={"inline-flex items-center px-2 border-2 border-cyan-500 rounded-xl w-full"}>撥款前我們會再次確定您滿意撥貸條件,行員對保後您就可以拿到資金!</div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={"flex flex-col px-8 py-2 mt-16"}>
+                <h2 className={"text-2xl"}>玉山融資貸款三大保證</h2>
+                <div className={"border-t-2 border-cyan-500 pt-12 flex flex-row gap-6 mt-4 px-8 justify-between items-stretch"}>
+                    <div className={"flex flex-col items-start gap-1 w-1/3"}>
+                        <div className={"text-2xl inline-flex items-center justify-center px-4"}>3HR內回覆</div>
+                        <div className={"text-2xl inline-flex items-center justify-center px-4"}>解決問題比你更急</div>
+                        <div className={"border-2 border-cyan-500 shadow-md shadow-cyan-800 h-full p-4 mt-2"}>留 言 或 來 電 0800-
+                            000-000,我們保證
+                            在最短時間,建議您
+                            解決方案。</div>
+                    </div>
+                    <div className={"flex flex-col items-start gap-1 w-1/3"}>
+                        <div className={"text-2xl inline-flex items-center justify-center px-4"}>業界最多元-</div>
+                        <div className={"text-2xl inline-flex items-center justify-center px-4"}>客製化融資方案</div>
+                        <div className={"border-2 border-cyan-500 shadow-md shadow-cyan-800 h-full p-4 mt-2"}>各種動產、不動產,
+                            公司股票質押、藝術
+                            品、設備機器、應收
+                            帳款、業界有的我們
+                            都有,業界沒有的我
+                            們也能提供。</div>
+                    </div>
+                    <div className={"flex flex-col items-start gap-1 w-1/3"}>
+                        <div className={"text-2xl inline-flex items-center justify-center px-4"}>爭取最低利率-</div>
+                        <div className={"text-2xl inline-flex items-center justify-center px-4"}>是玉山融資使命</div>
+                        <div className={"border-2 border-cyan-500 shadow-md shadow-cyan-800 h-full p-4 mt-2"}>其他業務以利率設算
+                            佣金,金融機構或貸
+                            款專員有墊高客戶借
+                            款成本的誘因。玉山
+                            融資的制度不以利率
+                            高低發佣,全員一致
+                            協助客戶降低利率。</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className={"flex flex-col px-8 py-2 mt-16"}>
+                <h2 className={"text-2xl"}>玉山融資貸款-立即留言免費諮詢</h2>
+                <div className={"border-t-2 border-cyan-500 pt-12 flex flex-row justify-around gap-3 mt-4"}>
+                    <div className={"flex flex-col bg-amber-50 border-2 border-cyan-500 p-12 gap-4"}>
+                        <input type={"text"} placeholder={"姓名(必填)"} className={"border border-gray-700 bg-gray-100 px-3 py-2"}/>
+                        <input type={"text"} placeholder={"聯絡電話(必填)"} pattern={"09\d{8}"} className={"border border-gray-700 bg-gray-100 px-3 py-2"}/>
+                        <input type={"text"} placeholder={"LINE ID"} className={"border border-gray-700 bg-gray-100 px-3 py-2"}/>
+                        <input type={"email"} placeholder={"E-MAIL"} className={"border border-gray-700 bg-gray-100 px-3 py-2"}/>
+                        <div>
+                            <input type={"text"} placeholder={"可聯絡時間"} className={"border border-gray-700 bg-gray-100 px-3 py-2 w-full"}/>
+                            <div>(未填寫則以平日上班時段為主)</div>
+                        </div>
+
+                        <div>
+                            <div className={"bg-cyan-600 text-white text-center text-2xl px-2 py-3"}>送出申請</div>
+                            <div>送出表示同意本網站隱私權政策</div>
+                        </div>
+                    </div>
+                    <div className={""}>
+                        <div className={"text-4xl mb-4 flex items-center gap-2"}><div className={"w-12 h-12 rounded-full inline-flex justify-center items-center border border-cyan-600 text-cyan-600"}>!</div>玉山融資貸款-防止詐騙提醒</div>
+                        <div className={"flex flex-col bg-amber-50 border-8 p-4 border-cyan-600 gap-4"}>
+                            <div className={"text-2xl"}>已逾10年的玉山融資貸不會主動:</div>
+                            <div className={"flex w-full items-center gap-4"}>
+                                <div className={"px-4 inline-flex justify-center items-center bg-cyan-600 text-white text-4xl font-bold rounded-full"}>1</div>
+                                <div className={"h-full"}>近期發生許多冒用「玉山融資貸款」名義,透過Telegram Telegram或大量發送簡訊,我們不會以任
+                                    何名義,包含美化銀行餘額名義,主動要求客
+                                    戶提供金融帳號、網銀密碼、及信用卡資料,
+                                    如果您有遇到,請撥165反詐騙電話查詢。</div>
+                            </div>
+                            <div className={"flex w-full items-center gap-4"}>
+                                <div className={"px-4 inline-flex justify-center items-center bg-cyan-600 text-white text-4xl font-bold rounded-full"}>2</div>
+                                <div className={"h-full"}>玉山融資貸款在業界超過10年,累積數萬名
+                                    貸款客戶,我們沒有配合其他投資公司舉辦
+                                    投資說明會,亦不會請您上P2P貸款平台申
+                                    請,如您是我們的舊客戶,可以與原本的專
+                                    員服務,或是來電0800-000-000 0800-000-000洽詢。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={"flex flex-col px-8 py-2 mt-16"}>
+                <h2 className={"text-2xl"}>貸款老師傅-「貸款實話實說」文章專區</h2>
+                <div className={"border-t-2 border-cyan-500 pt-12 flex flex-row gap-6 mt-4 px-8 justify-center items-stretch"}>
+                    <div className={"bg-[rgb(53,113,146)] px-16 py-8"}>
+                        <div className={"bg-white hover:bg-[rgb(236,242,244)] cursor-pointer flex rounded-xl px-3 py-2"}>
+                            <div></div>
+                            <div className={"flex flex-col"}>
+                                <div className={"text-2xl"}>企業貸款有哪些?銀行為何晴天送傘,雨天收傘</div>
+                                <div className={"text-sm"} >2022.02.02</div>
+                                <div className={"text-sm"} >#企業貸款</div>
+                            </div>
+                        </div>
+
+                        <div className={"underline text-white w-full text-right mt-4"}>更多文章</div>
+                    </div>
                 </div>
             </div>
         </div>
