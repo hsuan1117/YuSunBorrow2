@@ -1,5 +1,7 @@
 import Header from "./header";
 import Footer from "./footer";
+import Form from "@components/form";
+import Articles from "@components/articles";
 
 export default function Layout(props) {
     return (
@@ -9,6 +11,8 @@ export default function Layout(props) {
             <main className="flex-1 pt-4 bg-gray-50 px-12">
                 {props.children}
             </main>
+            <Form/>
+            <Articles/>
 
             <Footer/>
             <div className={"fixed shadow right-2 top-1/2 flex flex-col items-center"}>

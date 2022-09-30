@@ -1,6 +1,17 @@
 import Image from "next/image";
+import {useRouter} from "next/router";
+import Link from "next/link";
+
+export function NavBarItemLink({name, path, router}) {
+    return (
+        <div className={router.pathname === path && "bg-gray-200 px-2 rounded-lg"}>
+            <Link href={path}>{name}</Link>
+        </div>
+    )
+}
 
 export default function Header() {
+    const router = useRouter()
     return (
         <header className="">
             <div className={"bg-cyan-600 text-right text-white text-2xl py-4 pr-2"}>
@@ -25,14 +36,13 @@ export default function Header() {
             </div>
             <div className={"border-y border-cyan-400 py-2"}>
                 <div className={"flex flex-row justify-end bg-sky-300 text-xl gap-2 py-2 pr-2"}>
-                    <div>企業貸款</div>
-                    <div>房屋</div>
-                    <div>土地貸款</div>
-                    <div>汽機車貸款</div>
-                    <div>營業車貸款</div>
-                    <div>藝術品</div>
-                    <div>股權融資</div>
-                    <div>負責人債務整合</div>
+                    <NavBarItemLink name={"企業貸款"} path={"/enterprise"} router={router}/>
+                    <NavBarItemLink name={"房屋、土地貸款"} path={"/house"} router={router}/>
+                    <NavBarItemLink name={"汽機車貸款"} path={"/car"} router={router}/>
+                    <NavBarItemLink name={"營業車貸款"} path={"/business"} router={router}/>
+                    <NavBarItemLink name={"藝術品"} path={"/art"} router={router}/>
+                    <NavBarItemLink name={"股權融資"} path={"/stock"} router={router}/>
+                    <NavBarItemLink name={"負責人債務整合"} path={"/person"} router={router}/>
                 </div>
             </div>
         </header>
