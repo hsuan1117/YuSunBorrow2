@@ -98,8 +98,8 @@ export default function IndexPage() {
                 <h5 className={"text-lg"}>累積20年銀行資料庫透過AI演算法+貸款審查老師傅幫您把關</h5>
 
                 <div className={"border-t-2 border-cyan-500 pt-12 mt-2"}>
-                    <div className={"flex w-full justify-around"}>
-                        <div className={"w-1/2 flex flex-col items-center"}>
+                    <div className={"flex flex-col md:flex-row w-full justify-around gap-2"}>
+                        <div className={"md:w-1/2 flex flex-col items-center"}>
                             <div className={"w-32 h-32 bg-cyan-500 rounded-full"}></div>
                             <div className={"text-4xl font-bold text-center my-2"}>
                                 AI幫你選方案
@@ -111,7 +111,7 @@ export default function IndexPage() {
                                 AI機器人,協助您找出最合適的融資方案。<br/>
                             </div>
                         </div>
-                        <div className={"w-1/2 flex flex-col items-center"}>
+                        <div className={"md:w-1/2 flex flex-col items-center"}>
                             <div className={"w-32 h-32 bg-red-700 rounded-full"}></div>
                             <div className={"text-4xl font-bold text-center my-2"}>
                                 貸款老師傅最後把關
@@ -193,8 +193,8 @@ export default function IndexPage() {
 
             <div className={"flex flex-col px-8 py-2 mt-16"}>
                 <h2 className={"text-2xl"}>玉山融資貸款三大保證</h2>
-                <div className={"border-t-2 border-cyan-500 pt-12 flex flex-row gap-6 mt-4 px-8 justify-between items-stretch"}>
-                    <div className={"flex flex-col items-start gap-1 w-1/3"}>
+                <div className={"border-t-2 border-cyan-500 pt-12 flex flex-col md:flex-row gap-6 mt-4 px-8 justify-between items-stretch"}>
+                    <div className={"flex flex-col items-start gap-1 md:w-1/3"}>
                         <div className={"text-2xl inline-flex items-center justify-center px-4"}>3HR內回覆</div>
                         <div className={"text-2xl inline-flex items-center justify-center px-4"}>解決問題比你更急</div>
                         <div className={"border-2 border-cyan-500 shadow-md shadow-cyan-800 h-full p-4 mt-2"}>留 言 或 來 電 0800-
@@ -202,7 +202,7 @@ export default function IndexPage() {
                             在最短時間,建議您
                             解決方案。</div>
                     </div>
-                    <div className={"flex flex-col items-start gap-1 w-1/3"}>
+                    <div className={"flex flex-col items-start gap-1 md:w-1/3"}>
                         <div className={"text-2xl inline-flex items-center justify-center px-4"}>業界最多元-</div>
                         <div className={"text-2xl inline-flex items-center justify-center px-4"}>客製化融資方案</div>
                         <div className={"border-2 border-cyan-500 shadow-md shadow-cyan-800 h-full p-4 mt-2"}>各種動產、不動產,
@@ -212,7 +212,7 @@ export default function IndexPage() {
                             都有,業界沒有的我
                             們也能提供。</div>
                     </div>
-                    <div className={"flex flex-col items-start gap-1 w-1/3"}>
+                    <div className={"flex flex-col items-start gap-1 md:w-1/3"}>
                         <div className={"text-2xl inline-flex items-center justify-center px-4"}>爭取最低利率-</div>
                         <div className={"text-2xl inline-flex items-center justify-center px-4"}>是玉山融資使命</div>
                         <div className={"border-2 border-cyan-500 shadow-md shadow-cyan-800 h-full p-4 mt-2"}>其他業務以利率設算
@@ -229,7 +229,7 @@ export default function IndexPage() {
 
             <div className={"flex flex-col px-8 py-2 mt-16"}>
                 <h2 className={"text-2xl"}>玉山融資貸款-立即留言免費諮詢</h2>
-                <div className={"border-t-2 border-cyan-500 pt-12 flex flex-row justify-around gap-3 mt-4"}>
+                <div className={"border-t-2 border-cyan-500 pt-12 flex flex-col md:flex-row justify-around gap-3 mt-4"}>
                     <div className={"flex flex-col bg-amber-50 border-2 border-cyan-500 p-12 gap-4"}>
                         <input type={"text"} placeholder={"姓名(必填)"} className={"border border-gray-700 bg-gray-100 px-3 py-2"}/>
                         <input type={"text"} placeholder={"聯絡電話(必填)"} pattern={"09\d{8}"} className={"border border-gray-700 bg-gray-100 px-3 py-2"}/>
