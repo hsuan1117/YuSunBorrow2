@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function NavBarItemLink({name, path, router}) {
     return (
-        <div className={router.pathname === path && "bg-gray-200 px-2 rounded-lg"}>
+        <div className={router.pathname === path ? "bg-gray-200 px-2 rounded-lg" : ""}>
             <Link href={path}>{name}</Link>
         </div>
     )

@@ -15,7 +15,7 @@ export default function Layout(props) {
             <Articles/>
 
             <Footer/>
-            <div className={"fixed shadow right-2 top-1/2 flex flex-col items-center"}>
+            <div className={"fixed right-2 top-1/2 flex flex-col items-center bg-white bg-opacity-50"}>
                 <svg className={"w-16 h-16 fill-[#00C300] p-2 rounded-xl"} role="img" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg"><title>LINE</title>
                     <path
