@@ -8,7 +8,16 @@ import Home_Card from "@components/home/card";
 export default function IndexPage() {
     return (
         <div className="flex flex-col bg-white border-x border-cyan-500  pb-32">
-            <div className={"flex flex-col px-8 py-2  mt-6"}>
+            <div className="relative h-44 aspect-3/2 -skew-x-12">
+                <Image
+                    src="/front-00001.jpg"
+                    priority
+                    layout="fill"
+                    className="object-scale-down"
+                    alt="首頁圖"
+                />
+            </div>
+            <div className={"flex flex-col px-8 py-2 mt-6"}>
                 <h2 className={"text-2xl"}>為何大家貸款都找玉山貸款？</h2>
                 <h5 className={"text-lg"}>5萬到5億，專屬對應的服務團隊</h5>
 
@@ -19,7 +28,7 @@ export default function IndexPage() {
                         position: "企業金融",
                         money: "1000萬~5億",
                         edu: "清大管科系",
-                        exp: ["中租迪和企業貸款組7年","富邦商金處ARM 5年"],
+                        exp: ["中租迪和企業貸款組7年", "富邦商金處ARM 5年"],
                         talent: "企業貸款、應收帳款融資、票據借款",
                     }}/>
                     <Home_Card props={{
@@ -46,7 +55,7 @@ export default function IndexPage() {
                         position: "租賃融資",
                         money: "50萬〜1,000萬",
                         edu: "東吳經濟系",
-                        exp: ["中租微企組","玉山海外企業金融組","中信ARM"],
+                        exp: ["中租微企組", "玉山海外企業金融組", "中信ARM"],
                         talent: "",
                     }}/>
                 </div>
@@ -94,8 +103,10 @@ export default function IndexPage() {
                         "                            好,一直用海外子公司收款,不小心就求救無門,這時候\n" +
                         "                            公司基本支出那麼大,現金缺口多少我都算不出來,也不敢\n" +
                         "                            算,是張經理幫我做了超過30頁的簡報,安排金融機構與分\n" +
-                        "                            行簡報,安排整體的融資方案,才度過難關。」"} title={"「外幣OBU+應收帳款融資+廠房融資+藝術品融資\n" +
-                        "                            超過3億」"} name={"顏先生,台北, 62歲, 多間公司負責人"}/>
+                        "                            行簡報,安排整體的融資方案,才度過難關。」"}
+                                 title={"「外幣OBU+應收帳款融資+廠房融資+藝術品融資\n" +
+                                     "                            超過3億」"}
+                                 name={"顏先生,台北, 62歲, 多間公司負責人"}/>
 
                     <Testimonial
                         title={` 「建案蓋到一半要變更,營造協力廠要款,工資要漲,能動用,還好找了玉山貸款融資幫忙。」`}
@@ -135,30 +146,45 @@ export default function IndexPage() {
                 <h2 className={"text-2xl"}>留、申、撥,快速簡單拿到資金!</h2>
                 <div className={"border-t-2 border-cyan-500 pt-12 flex flex-col gap-3 mt-4"}>
                     <div className={"flex flex-col md:flex-row gap-1"}>
-                        <div className={"text-white text-2xl bg-cyan-500 rounded-full w-12 h-12 inline-flex items-center justify-center"}>留</div>
-                        <div className={"inline-flex items-center px-2 border-2 border-cyan-500 rounded-xl w-full"}>留言或來電0800-000-000,諮詢或像朋友一樣聊聊天,花您不到三分鐘,免費解決您三天也想不出結果的資金問題!</div>
+                        <div
+                            className={"text-white text-2xl bg-cyan-500 rounded-full w-12 h-12 inline-flex items-center justify-center"}>留
+                        </div>
+                        <div
+                            className={"inline-flex items-center px-2 border-2 border-cyan-500 rounded-xl w-full"}>留言或來電0800-000-000,諮詢或像朋友一樣聊聊天,花您不到三分鐘,免費解決您三天也想不出結果的資金問題!
+                        </div>
                     </div>
                     <div className={"flex flex-col md:flex-row gap-1"}>
-                        <div className={"text-white text-2xl bg-cyan-500 rounded-full w-12 h-12 inline-flex items-center justify-center"}>申</div>
-                        <div className={"inline-flex items-center px-2 border-2 border-cyan-500 rounded-xl w-full"}>申請貸款前,我們透過累積20年的數據資料庫,比對申請條件,AI程式+專業審查人員幫您找出超高核准率的方案。</div>
+                        <div
+                            className={"text-white text-2xl bg-cyan-500 rounded-full w-12 h-12 inline-flex items-center justify-center"}>申
+                        </div>
+                        <div
+                            className={"inline-flex items-center px-2 border-2 border-cyan-500 rounded-xl w-full"}>申請貸款前,我們透過累積20年的數據資料庫,比對申請條件,AI程式+專業審查人員幫您找出超高核准率的方案。
+                        </div>
                     </div>
                     <div className={"flex flex-col md:flex-row gap-1"}>
-                        <div className={"text-white text-2xl bg-cyan-500 rounded-full w-12 h-12 inline-flex items-center justify-center"}>撥</div>
-                        <div className={"inline-flex items-center px-2 border-2 border-cyan-500 rounded-xl w-full"}>撥款前我們會再次確定您滿意撥貸條件,行員對保後您就可以拿到資金!</div>
+                        <div
+                            className={"text-white text-2xl bg-cyan-500 rounded-full w-12 h-12 inline-flex items-center justify-center"}>撥
+                        </div>
+                        <div
+                            className={"inline-flex items-center px-2 border-2 border-cyan-500 rounded-xl w-full"}>撥款前我們會再次確定您滿意撥貸條件,行員對保後您就可以拿到資金!
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div className={"flex flex-col px-8 py-2 mt-16"}>
                 <h2 className={"text-2xl"}>玉山融資貸款三大保證</h2>
-                <div className={"border-t-2 border-cyan-500 pt-12 flex flex-col md:flex-row gap-6 mt-4 px-8 justify-between items-stretch"}>
+                <div
+                    className={"border-t-2 border-cyan-500 pt-12 flex flex-col md:flex-row gap-6 mt-4 px-8 justify-between items-stretch"}>
                     <div className={"flex flex-col items-start gap-1 md:w-1/3"}>
                         <div className={"text-2xl inline-flex items-center justify-center px-4"}>3HR內回覆</div>
                         <div className={"text-2xl inline-flex items-center justify-center px-4"}>解決問題比你更急</div>
-                        <div className={"border-2 border-cyan-500 shadow-md shadow-cyan-800 h-full p-4 mt-2"}>留 言 或 來 電 0800-
+                        <div className={"border-2 border-cyan-500 shadow-md shadow-cyan-800 h-full p-4 mt-2"}>留 言 或 來
+                            電 0800-
                             000-000,我們保證
                             在最短時間,建議您
-                            解決方案。</div>
+                            解決方案。
+                        </div>
                     </div>
                     <div className={"flex flex-col items-start gap-1 md:w-1/3"}>
                         <div className={"text-2xl inline-flex items-center justify-center px-4"}>業界最多元-</div>
@@ -168,7 +194,8 @@ export default function IndexPage() {
                             品、設備機器、應收
                             帳款、業界有的我們
                             都有,業界沒有的我
-                            們也能提供。</div>
+                            們也能提供。
+                        </div>
                     </div>
                     <div className={"flex flex-col items-start gap-1 md:w-1/3"}>
                         <div className={"text-2xl inline-flex items-center justify-center px-4"}>爭取最低利率-</div>
@@ -179,7 +206,8 @@ export default function IndexPage() {
                             款成本的誘因。玉山
                             融資的制度不以利率
                             高低發佣,全員一致
-                            協助客戶降低利率。</div>
+                            協助客戶降低利率。
+                        </div>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ export default function Home_Card({props}) {
             <div className={"absolute -top-6 -left-6 w-32 h-32"}>
                 <Image src={props.img}
                        className={"rounded-full"}
-                       layout={"fill"}
+                       layout="fill"
                        alt={`${props.name}`}
                 />
             </div>
