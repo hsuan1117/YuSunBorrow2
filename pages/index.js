@@ -7,7 +7,7 @@ import Home_Card from "@components/home/card";
 
 export default function IndexPage() {
     return (
-        <div className="flex flex-col bg-white border-x border-cyan-500  pb-32">
+        <div className="flex flex-col bg-white border-x border-cyan-500 pb-32">
             <div className="relative h-44 aspect-3/2 -skew-x-12">
                 <Image
                     src="/front-00001.jpg"
@@ -17,7 +17,7 @@ export default function IndexPage() {
                     alt="首頁圖"
                 />
             </div>
-            <div className={"flex flex-col px-8 py-2 mt-6"}>
+            <div className="flex flex-col md:px-8 px-2 py-2 mt-6">
                 <h2 className={"text-2xl"}>為何大家貸款都找玉山貸款？</h2>
                 <h5 className={"text-lg"}>5萬到5億，專屬對應的服務團隊</h5>
 

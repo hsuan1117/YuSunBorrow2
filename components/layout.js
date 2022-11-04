@@ -8,14 +8,14 @@ export default function Layout(props) {
         <div className="flex flex-col min-h-screen">
             <Header/>
 
-            <main className="flex-1 pt-4 bg-gray-50 px-12">
+            <main className="flex-1 pt-4 bg-gray-50 md:px-12 px-4">
                 {props.children}
             </main>
             <Form/>
             <Articles/>
 
             <Footer/>
-            <div className={"fixed right-2 top-1/2 flex flex-col items-center bg-white bg-opacity-50"}>
+            <div className={"fixed right-2 top-1/2 flex flex-col items-center bg-white bg-opacity-75 rounded-lg"}>
                 <svg className={"w-16 h-16 fill-[#00C300] p-2 rounded-xl"} role="img" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg"><title>LINE</title>
                     <path
