@@ -42,7 +42,7 @@ export default function CustomSwiper({props}) {
                 }}>
                 {/* Slides Here */}
                 {props.map(datum=>(
-                <SwiperSlide className="flex flex-row justify-center">
+                <SwiperSlide className="flex flex-row justify-center" key={datum.title}>
                     <div className="w-[70%] h-full border-8 border-custom-1 px-3 py-1">
                         <div className="font-bold text-lg">
                             {datum.title}
