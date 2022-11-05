@@ -4,17 +4,20 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                custom:{
+                custom: {
                     1: "#117399",
                     2: "#0292b7",
                     3: "#b1d4e0"
                 }
             },
-            aspectRatio:{
+            aspectRatio: {
                 "banner": "995 / 282",
                 "3/2": "3 / 2"
             }
         },
     },
-    plugins: [],
+    plugins: [require("daisyui")],
+    daisyui: {
+        themes: false
+    }
 }
