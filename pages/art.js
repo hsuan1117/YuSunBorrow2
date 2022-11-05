@@ -1,8 +1,3 @@
-import Image from "next/image";
-import {Carousel} from "react-responsive-carousel";
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Testimonial from "@components/Testimonial";
-
 export default function Art() {
     return (
         <div className="flex flex-col bg-white border-x border-cyan-500  pb-32">
