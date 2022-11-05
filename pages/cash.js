@@ -1,5 +1,5 @@
 
-export default function Person() {
+export default function Cash() {
     return (
         <div className="flex flex-col bg-white border-x border-cyan-500  pb-32">
             <div className={"flex flex-col px-8 py-2  mt-6"}>

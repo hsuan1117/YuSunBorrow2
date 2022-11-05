@@ -11,7 +11,7 @@ const navBarCategories = [
         path: "/real_estate"
     }, {
         name: ["汽機車", "貸款"],
-        path: "/vehical"
+        path: "/vehicle"
     }, {
         name: ["營業車", "貸款"],
         path: "/company_car"
