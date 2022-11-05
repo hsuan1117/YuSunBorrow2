@@ -29,7 +29,7 @@ export default function CustomSwiper({ props }) {
     }, [])
 
     return (
-        <div className="h-56 w-full flex relative">
+        <div className="md:h-56 h-auto w-full flex relative">
             <Swiper
                 spaceBetween={50}
                 loop={true}
@@ -43,14 +43,16 @@ export default function CustomSwiper({ props }) {
                 {/* Slides Here */}
                 {props.map(datum => (
                     <SwiperSlide className="flex flex-row justify-center" key={datum.title}>
-                        <div className="w-[70%] h-full border-8 border-custom-1 px-3 py-1">
-                            <div className="font-bold text-lg">
-                                {datum.title}
+                        <div className="w-[70%] h-full border-8 border-custom-1 px-3 py-1 flex flex-col">
+                            <div>
+                                <div className="font-bold md:text-lg text-base">
+                                    {datum.title}
+                                </div>
+                                <div className="text-right md:text-base text-xs">
+                                    {datum.from}
+                                </div>
                             </div>
-                            <div className="text-right">
-                                {datum.from}
-                            </div>
-                            <div className="pt-2">
+                            <div className="pt-2 md:text-base text-sm flex flex-col justify-center h-full">
                                 {datum.content}
                             </div>
                         </div>

@@ -8,15 +8,30 @@ import CustomSwiper from "@components/home/custom_swiper"
 export default function IndexPage() {
     return (
         <div className="flex flex-col bg-white border-x border-cyan-500 pb-32">
-            <div className="flex flex-row px-10">
-                <div className="relative w-80 aspect-[11/6] -skew-x-12">
+            <div className="flex flex-row md:px-10 px-5">
+                <div className="relative md:w-[70%] w-96 md:aspect-[11/6] h-40 md:h-auto -skew-x-12 bg-red-100">
                     <Image
-                    src="/front-00001.jpg"
-                    priority
-                    layout="fill"
-                    className="object-cover object-middle skew-x-12 scale-125"
-                    alt="首頁圖"
-                />
+                        src="/front-00001.jpg"
+                        priority
+                        layout="fill"
+                        className="object-cover object-middle skew-x-12 scale-125"
+                        alt="首頁圖"
+                    />
+                </div>
+                <div className="flex flex-col justify-center md:w-[30%] sm:w-[80%] w-[60%] pl-3">
+                    <div className="flex flex-row w-full h-full -skew-x-12 bg-custom-3 justify-end">
+                        <div className="flex flex-row w-[90%] h-full bg-custom-2 justify-end">
+                            <div className="flex flex-row w-[90%] h-full bg-custom-1">
+                                <div className="skew-x-12 flex flex-col justify-evenly py-5">
+                                    <div className="md:pl-10 sm:pl-6 pl-5 md:text-xl text-sm text-white">累積數萬用戶</div>
+                                    <div className="md:pl-8 sm:pl-5 pl-4 md:text-xl text-sm text-white">免費諮詢貸款</div>
+
+                                    <div className="md:pl-4 pl-1 md:text-3xl sm:text-xl text-base font-bold text-white">撐家庭</div>
+                                    <div className="md:pl-2 pl-0 md:text-3xl sm:text-xl text-base font-bold text-white">度難關</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="flex flex-col md:px-8 px-2 py-2 mt-6">
@@ -84,11 +99,9 @@ export default function IndexPage() {
                                     alt="underline"
                                     className="object-cover" />
                             </div>
-                            <div className={"text-center"}>
+                            <div className={"text-justify"}>
                                 <span className={"font-bold"}>20年銀行資料+AI演算法,協助您度過難關</span><br />
-                                業界唯一,20年跨及商業銀行、租賃公司、⺠間<br />
-                                金融業者的審核資料,加上我們資料科學家發展的<br />
-                                AI機器人,協助您找出最合適的融資方案。<br />
+                                業界唯一,20年跨及商業銀行、租賃公司、⺠間金融業者的審核資料,加上我們資料科學家發展的AI機器人,協助您找出最合適的融資方案。
                             </div>
                         </div>
                         <div className={"md:w-1/2 flex flex-col items-center"}>
@@ -98,7 +111,7 @@ export default function IndexPage() {
                                     alt="There's an ancient-loan teacher cares about you."
                                     className="rounded-full" />
                             </div>
-                            <div className={" text-4xl font-bold text-center pt-2"}>
+                            <div className={"text-4xl font-bold text-center pt-2"}>
                                 貸款老師傅最後把關
                             </div>
                             <div className="w-full h-12 relative">
@@ -107,11 +120,9 @@ export default function IndexPage() {
                                     alt="underline"
                                     className="object-cover" />
                             </div>
-                            <div className={" text-center"}>
+                            <div className={"text-justify"}>
                                 <span className={" font-bold"}>個金、企金、租賃審核經驗的團隊最後把關</span><br />
-                                業界僅見,我們邀集不同金融領域,包含個人金<br />
-                                融、企業金融、租賃公司審核人員成為我們的貸款<br />
-                                老師傅,做最後貸款送件的把關,幫您成功申貸。<br />
+                                業界僅見,我們邀集不同金融領域,包含個人金融、企業金融、租賃公司審核人員成為我們的貸款老師傅,做最後貸款送件的把關,幫您成功申貸。
                             </div>
                         </div>
                     </div>
@@ -122,7 +133,7 @@ export default function IndexPage() {
                 <h2 className={" text-2xl"}>為何大家都找玉山貸款融資?</h2>
                 <h5 className={" text-lg"}>我們的客戶親身見證:沒有過不了的關,只有你沒找玉山。</h5>
 
-                <div className={" border-t-2 border-cyan-500 pt-12 flex flex-row justify-center"}>
+                <div className={"border-t-2 border-cyan-500 pt-12 flex flex-row justify-center"}>
                     <CustomSwiper props={[
                         {
                             title: "「外幣OBU+應收帳款融資+廠房融資+藝術品融資超過3億」",
