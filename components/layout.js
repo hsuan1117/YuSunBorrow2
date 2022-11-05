@@ -1,7 +1,6 @@
 import Header from "./header";
 import Footer from "./footer";
 import Form from "@components/form";
-import Articles from "@components/articles";
 
 export default function Layout(props) {
     return (
@@ -12,7 +11,6 @@ export default function Layout(props) {
                 {props.children}
             </main>
             <Form/>
-            <Articles/>
 
             <Footer/>
             <div className={"fixed right-2 top-1/2 flex flex-col items-center bg-white bg-opacity-75 rounded-lg"}>

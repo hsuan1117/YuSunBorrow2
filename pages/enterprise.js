@@ -1,7 +1,9 @@
+import axios from "../lib/axios";
+import Articles from "@components/articles";
 
-export default function EnterprisePage() {
+export default function EnterprisePage({posts}) {
     return (
-        <div className="flex flex-col bg-white border-x border-cyan-500  pb-32">
+        <><div className="flex flex-col bg-white border-x border-cyan-500  pb-32">
             <div className={"flex flex-col px-8 py-2  mt-6"}>
                 <h2 className={"text-2xl"}>玉山貸款融資-企業貸款</h2>
                 <h5 className={"text-lg"}>我們的企業金融服務團隊可以爲你做什麽?</h5>
@@ -67,5 +69,16 @@ export default function EnterprisePage() {
                 </div>
             </div>
         </div>
+
+    <Articles posts={posts}/></>
     );
+}
+
+export async function getStaticProps() {
+    const {data: posts} = await axios.get('/wp/v2/posts')
+    return {
+        props: {
+            posts
+        }
+    }
 }
