@@ -184,7 +184,7 @@ export default function IndexPage() {
                             className={"text-white text-2xl bg-cyan-500 rounded-full w-12 h-12 inline-flex items-center justify-center"}>留
                         </div>
                         <div
-                            className={"inline-flex items-center px-2 border-2 border-cyan-500 rounded-xl w-full"}>留言或來電0800-000-000,諮詢或像朋友一樣聊聊天,花您不到三分鐘,免費解決您三天也想不出結果的資金問題!
+                            className={"inline-flex items-center px-2 border-2 border-cyan-500 rounded-xl w-full"}>留言或來電0800-888-039,諮詢或像朋友一樣聊聊天,花您不到三分鐘,免費解決您三天也想不出結果的資金問題!
                         </div>
                     </div>
                     <div className={"flex flex-col md:flex-row gap-1"}>
@@ -220,7 +220,7 @@ export default function IndexPage() {
                             className={"border-2 border-cyan-500 shadow-md shadow-cyan-800 h-full p-4 mt-2"}>留
                             言 或 來
                             電 0800-
-                            000-000,我們保證
+                            888-039,我們保證
                             在最短時間,建議您
                             解決方案。
                         </div>

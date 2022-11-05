@@ -2,6 +2,9 @@ import React, { useRef, useEffect } from "react"
 
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faChevronLeft} from "@fortawesome/free-solid-svg-icons/faChevronLeft";
+import {faChevronRight} from "@fortawesome/free-solid-svg-icons/faChevronRight";
 
 export default function CustomSwiper({ props }) {
     const autoPlayPeriod = 10000;
@@ -63,12 +66,12 @@ export default function CustomSwiper({ props }) {
             <div className="absolute left-0 h-full flex flex-col justify-center z-50">
                 <button onClick={() => {
                     prevSlide();
-                }}>Previous<br />Slide</button>
+                }}><FontAwesomeIcon icon={faChevronLeft} className={"w-5 h-5 sm:h-10 sm:w-10 text-custom-1"}/></button>
             </div>
             <div className="absolute right-0 h-full flex flex-col justify-center z-50">
                 <button onClick={() => {
                     nextSlide();
-                }}>Next<br />Slide</button>
+                }}><FontAwesomeIcon icon={faChevronRight} className={"w-5 h-5 sm:h-10 sm:w-10 text-custom-1"}/></button>
             </div>
         </div>
     )
